@@ -1,7 +1,7 @@
 import pygame
 
 
-class commonBullet(pygame.sprite.Sprite):
+class CommonBullet(pygame.sprite.Sprite):
     def __init__(self, position):
         pygame.sprite.Sprite.__init__(self)
         
@@ -23,7 +23,7 @@ class commonBullet(pygame.sprite.Sprite):
         self.active = True
 
 
-class superBullet(pygame.sprite.Sprite):
+class SuperBullet(pygame.sprite.Sprite):
     def __init__(self, position):
         pygame.sprite.Sprite.__init__(self)
         

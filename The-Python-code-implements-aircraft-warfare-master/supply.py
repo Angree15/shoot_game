@@ -74,11 +74,3 @@ class ConfuseSupply(Supply):
         self.mask = pygame.mask.from_surface(self.image)
 
 
-class FriendSupply(Supply):
-    def __init__(self, bg_size):
-        Supply.__init__(self, bg_size)
-        self.image = pygame.image.load("images/friend_supply.png").convert_alpha()
-        self.rect = self.image.get_rect()
-        self.rect.left, self.rect.bottom = randint(0, self.width - self.rect.width), -100
-        self.mask = pygame.mask.from_surface(self.image)
-
